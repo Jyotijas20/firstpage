@@ -1,0 +1,48 @@
+
+#accordian{
+    margin: 100px auto;
+    width: 1050px;
+}
+#accordian1{
+ box-shadow: 2px 2px 5px black;
+}
+
+#accordian li{
+    list-style: none;
+    margin-bottom: 10px;
+    background-color: #fff;
+    width: 100%;
+    padding: 1opx;
+    border-radius: 4px;
+
+}
+#accordian li label{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(0, 0, 4);
+    cursor: pointer;
+    background-color: burlywood;
+}
+#accordian li label span{
+    transform: rotat();
+    font-size: 30px;
+    color: #333;
+}
+#accordian label +input[type="checkbox"]{
+    display: none;
+}
+#accordian .content{
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+    background-color: rgb(226, 243, 237);
+}
+#accordian label +input[type="checkbox"]:checked + .content{
+    max-height: 400px;
+}

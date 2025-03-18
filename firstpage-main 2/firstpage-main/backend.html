@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5c6d09dda0.js"></script>
+</head>
+<style>
+    body{
+        background-color: blanchedalmond;
+    }
+    .top{
+    background-color: rgb(246, 168, 112);
+    padding: 10px;
+}
+.second{
+    display: grid;
+    grid-template-columns: 20% 60% 25%;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+}
+.second p:hover{
+    color: red;
+}
+.navbar{
+    display:grid;
+    grid-template-columns: 20% 70% 5%; 
+    background: rgb(193, 227, 240); 
+}
+.icon i{
+    color: white;
+    padding-right: 70px;
+    padding-top: 20px;
+}
+
+#nav{
+    display: grid;
+    grid-template-columns:20% 20% 20% 20% 20% 10%;
+}
+#nav a {
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+}
+#nav a:hover{
+    background-color: white;
+    color: red;
+}
+.drop{
+    background-color: aliceblue;
+    width: 200px;
+    color: black;
+    list-style: none;
+    display: none;
+    text-align: center;
+    top: 23%;
+    left: 48%;
+    margin: 2px;
+    position: absolute;
+    z-index: 1;
+}
+.drop li{
+    height: 40px;
+    padding-top: 12px;
+}
+#dropmenu:hover .drop {
+    display: block;
+    background-color: azure;
+}
+.drop li:hover{
+    background-color: black;
+    color: white;
+}
+.enquiry{
+    background-color: rgb(142, 142, 230);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 15px;
+    margin-right: 10%;
+}
+#btn{
+background-color: rgb(43, 146, 157);
+margin: 15px;
+text-align: center;
+border-radius: 5px;
+color: white;
+padding-bottom: 15px;
+margin-left: 90px;
+}
+#cap{
+    padding: 5px;
+}
+#navcap{
+    color: darkgreen;
+    font-family:cursive;
+    font-size: larger;
+}
+.form{
+    height:400px;
+    width:350px;
+    background-color: rgb(240, 231, 231);
+    text-align: center;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    color: #000;
+    left: 75%;
+    margin: 15px;
+   z-index: +1;
+}
+.mid1{
+    display: grid;
+    grid-template-columns:60px 80px 60px 80px ;
+    list-style: none;
+    background-color: rgb(64, 64, 250);
+    padding: 7px;
+    text-align: center;
+    margin: 15px;
+}
+.field input {
+    width: 80%;
+    height: 30px;
+}
+.field select{
+    width: 82%;
+    height: 33px;
+}
+#Submit{
+    background-color: rgb(64, 64, 250);
+    width: 80%;
+    padding: 5px;
+}
+.enquiry:hover .form {
+    display: block;
+    position: absolute;
+    left: 1000px;
+}
+.body{
+   font-size: 500%;
+   margin-left: 40%;
+}
+
+   
+</style>
+<body>
+    <div class="top">
+        <marquee behavior="" direction="left-right">Our Best offer ever!! Summer Special-Get 3 Courses at 22499/- only.</marquee>
+       </div> 
+       <div class="second"><p>Email: rjtechnology@gmail.com</p>
+       <div class="sec"><p>contact +91 9025741101</p></div>
+        <div class="icon">
+        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.x.com/"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/"></a><i class="fa-brands fa-linkedin"></i>
+       </div>
+       </div>
+       <div class="navbar">
+        <id id="rj">
+            <p id="navcap"><i id="cap" class="fa-solid fa-graduation-cap"></i>RJ Technology</p>
+        </id>
+        <div id="nav">
+            <a href="firstpage.html">Home </a>
+            <a href="">About</a>
+            <a href="" id="dropmenu">Courses
+                <div class="drop">
+                    <a href=""><li>Frontend</li></a>
+                    <a href=""><li>Frontend</li></a>
+
+                </div>
+            </a>
+            <a href="">Online Training  </a>
+            <a href="">Contact </a>
+            <div class="enquiry"> Enquire
+                <div class="form">
+                    <h4>Request For <br> Class Room & Online Training Quotation</h4>
+                    <div class="mid">
+                    <ul class="mid1">
+                    <li> <i class="fa-solid fa-house"></i></li>
+                    <li>Classroom</li>
+                    <li><i class="fa-solid fa-laptop"></i>
+                    <li>Online</li>
+                    </li>
+                    </ul> 
+                    <div class="field">
+                        <input type="text" placeholder="Enter Your Name"> <br><br>
+                        <input type="text" placeholder="Enter yoyr Phone number"><br><br>
+                        <input type="text" placeholder=" Enter your Email Id"><br><br>
+                        <select name="Select Courses" id="">
+                            <option value="">Select Courses</option>
+                            <option value="">HTML5</option>
+                            <option value="">CSS</option>
+                            <option value="">Javascript</option>
+                            <option value="">React js</option>
+                        </select
+                        ><br><br>
+                        <button id="Submit">Submit Querry</button>
+                    
+                    </div>      
+                 </div>
+                </div>
+        </div>
+        </div>
+       </div>
+       <div class="body">
+        <p>backend</p>
+       </div>
+</body>
+</html>

@@ -1,0 +1,406 @@
+body, html, span, div,p , h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto", sans-serif;
+}
+
+html{
+    padding: 0;
+    margin: 0;
+}
+.top {
+    background-color: rgb(246, 168, 112);
+    padding: 10px;
+}
+
+.second {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second a {
+    display: block;
+}
+
+.second p:hover {
+    color: red;
+}
+.second-left{
+    display: inline-flex;
+    gap:20px;
+}
+.second-right{
+    display: inline-flex;
+    gap: 10px;
+}
+.second-right a{
+    background-color: #fff;
+    border-radius: 5px;
+    aspect-ratio: 1;
+    padding: 5px;
+}
+.second-left a{
+    color:#f2f3f4;
+    text-decoration: none;
+}
+.second-left a:hover{
+    color: #ccc;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 20% 70% 5%;
+    background: rgb(193, 227, 240);
+}
+.icon{
+    display: inline-flex;
+}
+
+.icon i {
+    color: white;
+    padding-right: 16px;
+}
+
+#nav {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20% 10%;
+}
+
+#nav a {
+    text-align: center;
+    text-decoration: none;
+    padding-top: 20px;
+}
+
+#nav a:hover {
+    background-color: white;
+    color: red;
+}
+
+.drop {
+    background-color: aliceblue;
+    width: 200px;
+    color: black;
+    list-style: none;
+    display: none;
+    text-align: center;
+    top: 23%;
+    left: 48%;
+    margin: 2px;
+    position: absolute;
+    z-index: 1;
+}
+
+.feature-box i {
+    background-color: rgb(233, 244, 246);
+    padding: 30px;
+    border-radius: 50px;
+    position: relative;
+    left: 40%;
+    top: -40%;
+}
+
+.drop li {
+    height: 40px;
+    padding-top: 12px;
+}
+
+#dropmenu:hover .drop {
+    display: block;
+    background-color: azure;
+}
+
+.drop li:hover {
+    background-color: black;
+    color: white;
+}
+
+.enquiry {
+    background-color: rgb(142, 142, 230);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 10px;
+    margin: 15px;
+    margin-right: 10%;
+}
+
+#btn {
+    background-color: rgb(43, 146, 157);
+    margin: 15px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    padding-bottom: 15px;
+    margin-left: 90px;
+}
+
+#cap {
+    padding: 5px;
+}
+
+#navcap {
+    color: darkgreen;
+    font-family: cursive;
+    font-size: larger;
+}
+
+.form {
+    height: 400px;
+    width: 350px;
+    background-color: rgb(240, 231, 231);
+    text-align: center;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    color: #000;
+    left: 75%;
+    margin: 15px;
+    z-index: +1;
+}
+
+.mid1 {
+    display: grid;
+    grid-template-columns: 60px 80px 60px 80px;
+    list-style: none;
+    background-color: rgb(64, 64, 250);
+    padding: 7px;
+    text-align: center;
+    margin: 15px;
+}
+
+.field input {
+    width: 80%;
+    height: 30px;
+}
+
+.field select {
+    width: 82%;
+    height: 33px;
+}
+
+#Submit {
+    background-color: rgb(64, 64, 250);
+    width: 80%;
+    padding: 5px;
+}
+
+.enquiry:hover .form {
+    display: block;
+    position: absolute;
+    right: 10%;
+}
+
+aside {
+    background-image: url(https://images.pexels.com/photos/5940841/pexels-photo-5940841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    height: 700px;
+    width: 100%;
+    background-size: cover;
+    animation: images 10s infinite;
+}
+
+@keyframes images {
+    30% {
+        background-image: url(https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    }
+    50% {
+        background-image: url(https://images.pexels.com/photos/6147369/pexels-photo-6147369.jpeg?auto=compress&cs=tinysrgb&w=600);
+    }
+    60% {
+        background-image: url(https://images.pexels.com/photos/1462630/pexels-photo-1462630.jpeg?auto=compress&cs=tinysrgb&w=600);
+    }
+    80% {
+        background-image: url(https://images.pexels.com/photos/1370298/pexels-photo-1370298.jpeg?auto=compress&cs=tinysrgb&w=600);
+    }
+    100% {
+        background-image: url(https://images.pexels.com/photos/5676744/pexels-photo-5676744.jpeg?auto=compress&cs=tinysrgb&w=600);
+    }
+}
+
+main {
+    width: 1050px;
+    position: absolute;
+    top: 300px;
+    left: 150px;
+    color: white;
+    font-size: larger;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.applybtn {
+    padding: 10px;
+    background-color: rgb(119, 248, 119);
+    color: white;
+    font-size: medium;
+    width: 100px;
+}
+
+.form2 {
+    background-color: white;
+    height: 400px;
+    width: 350px;
+    text-align: center;
+    padding: 15px;
+    font-family: cursive;
+    border: 2px solid rgb(247, 244, 244);
+    display: none;
+    position: absolute;
+    z-index: 2;
+    margin-top: 10px;
+    color: black;
+    left: 12%;
+    top: 20%;
+}
+
+.form2 input {
+    width: 80%;
+    padding: 10px;
+}
+
+.form2 textarea {
+    width: 80%;
+    padding: 15px;
+}
+
+.apply {
+    background-color: rgb(108, 31, 197);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.applybtn:hover .form2 {
+    display: block;
+}
+
+article {
+    text-align: center;
+    font-family: cursive;
+}
+
+.box1 {
+    background-color: rgb(63, 182, 184);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.icon1 {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(239, 244, 242);
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 100%;
+    position: absolute;
+    left: 13%;
+    top: 125%;
+}
+
+.box2 {
+    background-color: rgb(63, 182, 184);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.icon2 {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(239, 244, 242);
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 100%;
+    position: absolute;
+    left: 36%;
+    top: 125%;
+}
+
+.box3 {
+    background-color: rgb(63, 182, 184);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.icon3 {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(239, 244, 242);
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 100%;
+    position: absolute;
+    left: 59%;
+    top: 125%;
+}
+
+.box4 {
+    background-color: rgb(63, 182, 184);
+    text-align: center;
+    padding: 50px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.icon4 {
+    height: 60px;
+    width: 60px;
+    background-color: rgb(239, 244, 242);
+    text-align: center;
+    padding-top: 30px;
+    border-radius: 100%;
+    position: absolute;
+    left: 82%;
+    top: 125%;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.features :hover {
+    background-color: white;
+}
+
+.feature-box {
+    background-color: rgb(153, 234, 207);
+    padding: 40px;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px 5px rgb(242, 238, 238);
+}
+
+.courses {
+    text-align: center;
+    font-family: cursive;
+}
+
+.boxes {
+    margin: 3%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    background-color: white;
+    color: black;
+    box-shadow: 5px 5px 10px 5px rgb(50, 50, 50);
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
